@@ -1,0 +1,100 @@
+body {
+    background-color: #fff;
+    color: #111;
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* Modern container */
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Botón azul ingreso */
+.btn-ingreso {
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.08);
+}
+
+.btn-ingreso:hover {
+    background: #1d4ed8;
+}
+
+/* Botón rojo salir */
+.btn-salir {
+    background: #ef4444;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(239, 68, 68, 0.08);
+}
+
+.btn-salir:hover {
+    background: #dc2626;
+}
+
+/* Navigation Drawer */
+.drawer {
+    background: #f3f4f6;
+    color: #111;
+    width: 60px;
+    transition: width 0.3s;
+    overflow: hidden;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.04);
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.drawer.expanded {
+    width: 220px;
+}
+
+.drawer-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.drawer-item:hover {
+    background: #e0e7ef;
+}
+
+.drawer-icon {
+    font-size: 1.5rem;
+    margin-right: 0;
+    transition: margin 0.3s;
+}
+
+.drawer.expanded .drawer-icon {
+    margin-right: 1rem;
+}
+
+.drawer-label {
+    opacity: 0;
+    transition: opacity 0.3s;
+    white-space: nowrap;
+}
+
+.drawer.expanded .drawer-label,
+.drawer-item:hover .drawer-label {
+    opacity: 1;
+}
